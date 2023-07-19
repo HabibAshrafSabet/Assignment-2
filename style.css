@@ -230,6 +230,51 @@ ul .icon {
 
 /* online games section style end  */
 
+/* play instant section style start */
+
+.play-instant{
+    height: 130vh;   
+}
+.play-instant-container{
+    display: flex; 
+    padding-top: 3rem;
+}
+.play-instant-text{
+    padding:15rem 2.5rem 0 3rem;
+    text-align: center;
+}
+.play-instant-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.play-instant-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.play-instant-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color:#534C64;
+    padding: 0.8rem 0 1rem 0;
+}
+.play-instant-img-container{
+    padding: 0 3rem;
+}
+.play-instant-img1{
+    width: 100%;
+}
+.play-instant-img2{
+    width: 40%;
+    position: relative;
+    bottom: 14rem;
+    right: 9rem;
+    border: 2px solid gray;
+}
+
+/* play instant section style end */
+
 
 
 /* Media Query start */
@@ -282,9 +327,30 @@ ul .icon {
         grid-template-columns: repeat(1,1fr);   
         padding-left: 4rem;
     }
-    
+    .play-instant{
+        height: 190vh;
+        margin-top: -200px;
+    }
+    .play-instant-container{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .play-instant-img-container{
+        padding: 2rem 0 0 7rem;
+        margin: 0;
+    }
+    .play-instant-img1{
+        width: 80%;
+    }
+    .play-instant-img2{
+        width: 30%;
+        position: relative;
+        bottom: 5rem;
+        right: 3.5rem;
+        border: 2px solid gray;
+        border-radius: 0.5rem;
+    }
 }
-
 
 /* medium device  */
 
@@ -303,5 +369,27 @@ ul .icon {
     }
     .online-game-img-container{
         grid-template-columns: repeat(2,1fr);
-    }    
+    } 
+    .play-instant{
+        height: 245vh;
+        border: 1px solid tomato;
+        margin-top: -240px;
+    }
+    .play-instant-container{
+        flex-direction: column;
+    }
+    .play-instant-img-container{
+        padding: 2rem 0 0 11rem;
+    }
+    .play-instant-img1{
+        width: 80%;
+    }
+    .play-instant-img2{
+        width: 30%;
+        position: relative;
+        bottom: 9rem;
+        right: 5rem;
+        border: 2px solid gray;
+        border-radius: 0.5rem;
+}
 }
