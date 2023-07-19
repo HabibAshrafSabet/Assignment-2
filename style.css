@@ -424,6 +424,67 @@ h5{
 /* popular game section style end  */
 
 
+ /* footer section style start */
+
+.footer{
+    margin-top: 3rem;
+    background:  #e3bc9a;
+    padding-top: 1.5rem;
+}
+.footer-logo{
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo-img{
+    width: 5rem;
+}
+.footer-logo-title{
+    font-size: 2.6rem;
+}
+.footer-list-item{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+.item{
+    padding: 0 1rem 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #534C64;
+}
+.icon-container{
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+.icon-footer{
+    font-size: 2rem;
+    padding:0 1rem 0 1rem;
+}
+.privacy-area{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.privacy{
+    padding: 0 1rem 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #534C64;
+}
+.footer-privacy{
+    text-align: center;
+    padding: 1.8rem 0 4rem 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #534C64;
+}
+
+/* footer section style end */
+ 
+
 
 /* Media Query start */
 
@@ -538,6 +599,13 @@ h5{
         padding: 1rem 0rem 1rem 1rem;
         gap: 1rem;
     }
+    .footer-list-item{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .item{
+        padding: 0.7rem 0 0.9rem 0.8rem;
+    } 
 }
 /* medium device  */
 
@@ -609,9 +677,9 @@ h5{
         gap: 1rem;
     }
     .other-half-games{
-    grid-template-columns: repeat(2,1fr);
-    padding: 1rem 0rem 1rem 1rem;
-    gap: 1rem;
-   }
+        grid-template-columns: repeat(2,1fr);
+        padding: 1rem 0rem 1rem 1rem;
+        gap: 1rem;
+    }
 
 }
