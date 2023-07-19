@@ -76,7 +76,7 @@ i{
 .banner-title{
     color: black;
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
 }
 .banner-tag{
@@ -161,6 +161,75 @@ ul .icon {
 
 /* we are gamer section style end */
 
+/* online games section style start  */
+
+.online-game-text{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.online-game-title{
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+.online-game-description{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #534C64;
+    padding: 0.6rem 0 1.4rem 0;
+}
+.diff-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.online-game-img-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1rem 2rem 0 4rem; 
+    gap: 0.5rem;
+}
+.online-game-img{
+    width: 17rem;
+}
+.online-game-description{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #534C64;
+}
+.online-game-single-img{
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16.7rem;
+    height: 19.7rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2rem solid #F948B2;
+    border-radius: 0.7rem;
+    opacity: 0;
+}
+.online-game-single-img:hover .overlay{
+    opacity: 1;
+}
+.play-icon{
+    font-size:1.7rem ;
+    color: white;
+}
+.play-title{
+    font-size: 1rem;
+    color: white;
+}
+
+
+/* online games section style end  */
+
 
 
 /* Media Query start */
@@ -209,6 +278,11 @@ ul .icon {
     .gamer-quote{
         font-size: 1.2rem;
     }
+    .online-game-img-container{
+        grid-template-columns: repeat(1,1fr);   
+        padding-left: 4rem;
+    }
+    
 }
 
 
@@ -227,5 +301,7 @@ ul .icon {
     .gamer-text{
         text-align: center;
     }
-
+    .online-game-img-container{
+        grid-template-columns: repeat(2,1fr);
+    }    
 }
